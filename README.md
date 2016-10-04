@@ -1,3 +1,5 @@
+# Note: under construction
+
 # Arduino LCD TFT Library for ILI9325 Liltek driver
 
 This is the dedicated graphics hardware-specific library for ILI9325 TFT LCD display driver. It needs to be paired with the core graphics Adafruit GFX Library.
