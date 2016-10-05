@@ -1,4 +1,4 @@
-# Note: under construction
+# Note: library under construction - not working
 
 # Arduino LCD TFT Library for ILI9325 Liltek driver
 
