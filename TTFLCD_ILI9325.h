@@ -18,10 +18,16 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <Adafruit_GFX.h>
 #include "TTFLCD_ILI9325_registers.h"
 
+class TTFLCD_ILI9325 : public Adafruit_GFX {
+  public:
+  TTFLCD_ILI9325(uint8_t cs, uint8_t cd, uint8_t wr, uint8_t rd, uint8_t rst);
+  
+  uint16_t ReadRegisters16(uint8_t r);
+  
+  private:
+  void init(),
 
-
-
-
+} 
 
 
 #endif    // _TTFLCD_ILI9325_H
