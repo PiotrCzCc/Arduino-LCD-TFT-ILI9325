@@ -16,5 +16,12 @@ POSSIBILITY OF SUCH DAMAGE.
 #define _TTFLCD_ILI9325_H
 
 #include <Adafruit_GFX.h>
+#include "TTFLCD_ILI9325_registers.h"
+
+
+
+
+
+
 
 #endif    // _TTFLCD_ILI9325_H
