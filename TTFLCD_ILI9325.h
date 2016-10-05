@@ -20,7 +20,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 class TTFLCD_ILI9325 : public Adafruit_GFX {
   public:
-  TTFLCD_ILI9325(uint8_t cs, uint8_t cd, uint8_t wr, uint8_t rd, uint8_t rst);
+  TTFLCD_ILI9325(uint8_t cs, uint8_t cd, uint8_t wr, uint8_t rd, uint8_t rst);    // Constructor
   
   uint16_t ReadRegisters16(uint8_t r);
   
