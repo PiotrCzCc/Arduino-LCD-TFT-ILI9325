@@ -13,11 +13,9 @@ ILI9325 chip features:
 - Serial Peripheral Interface (SPI)
 
 **LCD TFT 2,4' shield**
-========
+====================
 ![Picture1] | ![Picture2]
 ------------ | -------------
-
-![Preview](https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_2.jpg)
 
 weqewrwerw
 
