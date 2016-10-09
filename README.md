@@ -13,10 +13,10 @@ ILI9325 chip features:
 - Serial Peripheral Interface (SPI)
 
 **LCD TFT 2,4' shield**
-![Picture1] | ![Picture2]
+![Picture1]|![Picture2]
 ------------ | -------------
 
-
+weqewrwerw
 
 [Picture1]:https://raw.githubusercontent.com/0xPIT/reflowOvenController/master/images/Completed1.jpg
 [Picture2]:https://raw.githubusercontent.com/0xPIT/reflowOvenController/master/images/Completed2.jpg
