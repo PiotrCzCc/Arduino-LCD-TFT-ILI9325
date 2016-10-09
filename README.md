@@ -15,8 +15,9 @@ ILI9325 chip features:
 **LCD TFT 2,4' shield**
 ====================
 ![Picture1] | ![Picture2]
-![Picture3] | ![Picture3]
 ------------ | -------------
+![Picture3] | ![Picture3]
+
 
 weqewrwerw
 
