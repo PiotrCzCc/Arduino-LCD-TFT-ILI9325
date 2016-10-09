@@ -18,10 +18,10 @@ ILI9325 chip features:
 ------------ | -------------
 ![Picture3] | ![Picture4]
 
-
-weqewrwerw
+![Picture5]
 
 [Picture1]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_3.jpg
 [Picture2]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_2.jpg
 [Picture3]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_4.jpg
 [Picture4]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_1.jpg
+[Picture5]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_5.jpg
