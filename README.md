@@ -16,7 +16,9 @@ ILI9325 chip features:
 ![Picture1]|![Picture2]
 ------------ | -------------
 
+![Preview](https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_2.jpg)
+
 weqewrwerw
 
-[Picture1]:https://raw.githubusercontent.com/0xPIT/reflowOvenController/master/images/Completed1.jpg
-[Picture2]:https://raw.githubusercontent.com/0xPIT/reflowOvenController/master/images/Completed2.jpg
+[Picture1]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_3.jpg
+[Picture2]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_2.jpg
