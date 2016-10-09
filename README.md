@@ -16,7 +16,7 @@ ILI9325 chip features:
 ====================
 ![Picture1] | ![Picture2]
 ------------ | -------------
-![Picture3] | ![Picture3]
+![Picture3] | ![Picture4]
 
 
 weqewrwerw
