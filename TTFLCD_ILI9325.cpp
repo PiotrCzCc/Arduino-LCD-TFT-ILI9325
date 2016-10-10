@@ -16,3 +16,40 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 #include "TTFLCD_ILI9325.h"
+
+#include <stdint.h>
+
+TFTLCD_ILI9325::TFTLCD_ILI9325() :
+	Adafruit_GFX(TFTWIDTH, TFTHEIGHT) {
+	
+	
+}
+
+uint16_t TFTLCD_ILI9325::ReadRegisters16(uint8_t r) {
+	uint16_t result;
+	uint8_t hi, lo;
+
+	nCS_LOW;
+	RS_COMMAND;
+	LCD_WRITE_8_bit(0x00);
+	LCD_WRITE_8_bit(r);
+	
+	setReadDirInline();
+	LCD_READ_8_bit(hi);
+	LCD_READ_8_bit(lo);
+	
+	setWriteDirInline();
+	nCS_HIGH;
+	
+	result = hi; result <<= 8; result |= lo;
+	return result;
+}
+
+
+void TFTLCD_ILI9325::drawPixel(int16_t x, int16_t y, uint16_t color) {
+
+	
+}
+
+
+

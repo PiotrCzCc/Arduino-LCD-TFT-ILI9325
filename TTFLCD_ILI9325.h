@@ -14,22 +14,28 @@ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
-#ifndef __TTFLCD_ILI9325_H_
-#define __TTFLCD_ILI9325_H_
+#ifndef __TFTLCD_ILI9325_H_
+#define __TFTLCD_ILI9325_H_
 
 #include <Adafruit_GFX.h>
-#include "TTFLCD_ILI9325_registers.h"
+#include <stdint.h>
 
-class TTFLCD_ILI9325 : public Adafruit_GFX {
+#include "TTFLCD_ILI9325_registers.h"
+#include "TTFLCD_shield_definition.h"
+
+
+class TFTLCD_ILI9325 : public Adafruit_GFX {
   public:
-  TTFLCD_ILI9325(uint8_t cs, uint8_t cd, uint8_t wr, uint8_t rd, uint8_t rst);    // Constructor
+  	TFTLCD_ILI9325();    // Constructor
   
-  uint16_t ReadRegisters16(uint8_t r);
+	void 		drawPixel(int16_t x, int16_t y, uint16_t color);
+	uint16_t	ReadRegisters16(uint8_t r);
+	
   
   private:
-  void init(),
+	void 		init();
 
-} 
+};		//End TFTLCD_ILI9325 class declaration
 
 
-#endif    // __TTFLCD_ILI9325_H_
+#endif    // __TFTLCD_ILI9325_H_
