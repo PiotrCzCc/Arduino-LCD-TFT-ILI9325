@@ -35,18 +35,23 @@ POSSIBILITY OF SUCH DAMAGE.
 #define nCS_PORT PORTC				// A3 pin
 #define nCS_MASK B00001000			// nCS - Chip Select signal (active - L)
 
+#define nRESET_PORT PORTC			// A4 pin
+#define nRESET_MASK B00010000		// nRESET - Chip Reset signal (active - L)
+
 
 // Control signals are ACTIVE LOW (idle is HIGH)
 // Command/Data: LOW = command, HIGH = data
 // These are single-instruction operations and always inline
-#define RD_ACTIVE	nRD_PORT &= ~nRD_MASK
-#define RD_IDLE		nRD_PORT |=  nRD_MASK
-#define nWR_LOW		nWR_PORT &= ~nWR_MASK			// Active state of nWR
-#define nWR_HIGH	nWR_PORT |=  nWR_MASK			// Idle state of nWR
-#define RS_COMMAND	RS_PORT &= ~RS_MASK
-#define RS_DATA		RS_PORT |=  RS_MASK
-#define nCS_LOW		nCS_PORT &= ~nCS_MASK			// Active state of nCS
-#define nCS_HIGH	nCS_PORT |=  nCS_MASK			// Idle state of nCS
+#define RD_ACTIVE		nRD_PORT &= ~nRD_MASK
+#define RD_IDLE			nRD_PORT |=  nRD_MASK
+#define nWR_LOW			nWR_PORT &= ~nWR_MASK				// Active state of nWR
+#define nWR_HIGH		nWR_PORT |=  nWR_MASK				// Idle state of nWR
+#define RS_COMMAND		RS_PORT &= ~RS_MASK
+#define RS_DATA			RS_PORT |=  RS_MASK
+#define nCS_LOW			nCS_PORT &= ~nCS_MASK				// Active state of nCS
+#define nCS_HIGH		nCS_PORT |=  nCS_MASK				// Idle state of nCS
+#define nRESET_LOW		nRESET_PORT &= ~nRESET_MASK			// Active state of nRESET
+#define nRESET_HIGH		nRESET_PORT |=  nRESET_MASK			// Idle state of nRESET
 
 // 
 #define LCD_WRITE_8_bit(d) {                          \
@@ -54,7 +59,21 @@ POSSIBILITY OF SUCH DAMAGE.
     PORTB = (PORTB & B11111100) | ((d) & B00000011);  \
 	LCD_WR_STROBE; }
 
-	//
+// Set value of TFT register: 8-bit address, 16-bit value
+// hi & lo are temp vars
+// write command 0x00, a
+// write data d (hi, lo)
+#define LCD_WRITE_16_bit(a, d) {                      \
+  uint8_t hi, lo;                                     \
+  RS_COMMAND;                                         \
+  LCD_WRITE_8_bit(0x00);                              \
+  LCD_WRITE_8_bit(a);                                 \
+  RS_DATA;                                            \
+  hi = (d) >> 8; lo = (d);                            \
+  LCD_WRITE_8_bit(hi);                                \
+  LCD_WRITE_8_bit(lo); }
+
+//
 #define LCD_READ_8_bit(result) {                      \
     RD_ACTIVE;                                        \
     DELAY7;                                           \
