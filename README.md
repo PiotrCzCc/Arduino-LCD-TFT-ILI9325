@@ -8,7 +8,7 @@ Adafruit GFX graphics core library derive from https://github.com/adafruit/Adafr
 
 ILI9325 chip features:
 - 240x320 RGB resolution
-- 262,144 display color
+- 262,144 display color (Note: The library supports only 16-bit color - 65,536 colors.)
 
 LCD TFT 2,4' shield features:
 - shield compatible with Arduino UNO
