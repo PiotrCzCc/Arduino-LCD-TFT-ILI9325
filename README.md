@@ -23,7 +23,7 @@ LCD TFT 2,4' shield features:
 
 ![Picture5]
 
-**2) LCD TFT ILI9325 Library **
+**2) LCD TFT ILI9325 Library**
 ====================
 setRotation(0) | setRotation(1) | setRotation(2) | setRotation(3)
 ------------ | ------------- | ------------- | -------------
