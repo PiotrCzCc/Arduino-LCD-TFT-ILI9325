@@ -24,10 +24,12 @@ LCD TFT 2,4' shield features:
 ![Picture5]
 
 **2) LCD TFT ILI9325 Library**
+
+void setRotation(uint8_t x);
 ====================
 setRotation(0) | setRotation(1) | setRotation(2) | setRotation(3)
 ------------ | ------------- | ------------- | -------------
-![Picture6] | ![Picture7] | [Picture8] | ![Picture9]
+![Picture6] | ![Picture7] | ![Picture8] | ![Picture9]
 
 [Picture1]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_3.jpg
 [Picture2]:https://raw.githubusercontent.com/PiotrCzCc/Arduino-LCD-TFT-ILI9325/master/doc/2.4_TFT_LCD_ILI9325_2.jpg
