@@ -26,7 +26,7 @@ LCD TFT 2,4' shield features:
 **2) LCD TFT ILI9325 Library**
 ====================
 void setRotation(uint8_t x);
-====================
+
 setRotation(0) | setRotation(1) | setRotation(2) | setRotation(3)
 ------------ | ------------- | ------------- | -------------
 ![Picture6] | ![Picture7] | ![Picture8] | ![Picture9]
